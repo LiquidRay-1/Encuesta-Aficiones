@@ -1,1 +1,1 @@
-Es necesario instalar la carpeta no_modules en el proyecto de Angular para que todo funcione perfectamente
+Es necesario instalar la carpeta node_modules en el proyecto de Angular para que todo funcione perfectamente
