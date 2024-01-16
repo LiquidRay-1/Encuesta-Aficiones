@@ -1,0 +1,35 @@
+
+<form (submit)="getData()" [formGroup]="form">
+    <input type="text" formControlName="username" placeholder="Usuario" autocomplete="off"><br>
+    <br><br>
+
+    <h3>Género</h3>
+
+    <input type="radio" name="genero" formControlName="genero" value="0"/> Masculino
+    <input type="radio" name="genero" formControlName="genero" value="1"/> Femenino
+
+    <h3>Fecha de registro</h3>
+
+    <input type="date" formControlName="fechaRegistro"/>
+    <br><br>
+
+    <select formControlName="salario">
+        <option value="">Seleccionar rango salarial</option>
+        <option value="1">BAJO</option>
+        <option value="2">MEDIO</option>
+        <option value="3">ALTO</option>
+    </select>
+
+    <br><br>
+
+    <input type="checkbox" formControlName="checkbox1" /> Pesca
+    <input type="checkbox" formControlName="checkbox2"/> Lectura
+    <input type="checkbox" formControlName="checkbox3"/> Música
+
+    <h2>Observaciones</h2>
+    <textarea formControlName="observacion" cols="30" rows="5"></textarea>
+
+    <br>
+
+    <button type="submit">ENVIAR</button>
+</form>
